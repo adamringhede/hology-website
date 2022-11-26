@@ -15,7 +15,7 @@ jobs:
       - name: Build Core
         working-directory: ./
         run: |
-          mdkir -p dist
+          mkdir -p dist
           cp index.html ./dist/
       - uses: actions/upload-artifact@main
         with:
