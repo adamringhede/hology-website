@@ -12,11 +12,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-      - name: Build Core
+      - name: Compile
         working-directory: ./
         run: |
-          mkdir -p dist
-          echo '<h1>This was created dynamically</h1>' > dist/index.html
+          npm run build
       - uses: actions/upload-artifact@main
         with:
           name: page
