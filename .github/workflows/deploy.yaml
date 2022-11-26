@@ -12,6 +12,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+      - name: Install dependencies
+        working-directory: ./
+        run: |
+          npm ci
       - name: Compile
         working-directory: ./
         run: |
