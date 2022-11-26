@@ -16,7 +16,7 @@ jobs:
         working-directory: ./
         run: |
           mkdir -p dist
-          cp index.html ./dist/
+          echo '<h1>This was created dynamically</h1>' > dist/index.html
       - uses: actions/upload-artifact@main
         with:
           name: page
