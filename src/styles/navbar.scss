@@ -11,6 +11,15 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: 900px) {
+    width: 90%;
+    .links {
+      display: none !important;
+    }
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .logo {
     flex: 0 0;
   }
@@ -18,14 +27,14 @@
   .links {
     flex: 1 0;
     display: flex;
-    margin-left: 30px;
+    margin-left: 50px;
     //justify-content: space-around;
     .link {
-      margin: 0 30px 0 30px;
+      padding: 20px 20px 20px 20px;
       display: inline-block;
       cursor: pointer;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 18px;
       line-height: 22px;
       text-align: center;
