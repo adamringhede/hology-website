@@ -10,14 +10,16 @@
 
   display: flex;
   align-items: center;
+  transition: all 100ms;
 
   @media (max-width: 900px) {
     width: 90%;
     .links {
       display: none !important;
     }
-    flex-direction: column;
-    justify-content: center;
+    background: rgba(217, 217, 217, 0);
+    // Center
+    //justify-content: center;
   }
 
   .logo {
