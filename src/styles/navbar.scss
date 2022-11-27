@@ -1,0 +1,43 @@
+.nav-bar {
+  width: 827px;
+  height: 70px;
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background: rgba(217, 217, 217, 0.03);
+  border-radius: 94px;
+
+  display: flex;
+  align-items: center;
+
+  .logo {
+    flex: 0 0;
+  }
+
+  .links {
+    flex: 1 0;
+    display: flex;
+    margin-left: 30px;
+    //justify-content: space-around;
+    .link {
+      margin: 0 30px 0 30px;
+      display: inline-block;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: -0.03em;
+      color: rgba(255, 255, 255, 0.32);
+      .select {
+        color: white;
+      }
+      &:hover {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      transition: color 150ms;
+    }
+  }
+}

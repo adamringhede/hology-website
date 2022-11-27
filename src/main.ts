@@ -1,7 +1,8 @@
-import './style.css'
+import './style.scss'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
-
+import { getReleases, ReleasePlatform } from './releases'
+/*
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -18,6 +19,27 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       Click on the Vite and TypeScript logos to learn more
     </p>
   </div>
-`
+`*/
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+//setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+
+const releases = await getReleases()
+console.log(releases)
+
+function updateReleaseLink(platform: ReleasePlatform) {
+  const link = document.querySelector<HTMLAnchorElement>(
+    '#download-' + platform.toLowerCase()
+  )
+  if (link != null) {
+    const latestRelease = releases
+      .reverse()
+      .find((r) => r.platform === platform)
+    if (latestRelease != null) {
+      link.href = latestRelease.link
+    }
+  }
+}
+
+updateReleaseLink(ReleasePlatform.macOS)
+updateReleaseLink(ReleasePlatform.windows)
+updateReleaseLink(ReleasePlatform.linux)
