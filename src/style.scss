@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 15px 0 15px;
 }
 
 h2 {
@@ -81,6 +82,22 @@ section {
 
   background: rgba(255, 255, 255, 0.03);
   border-radius: 15px;
+}
+
+.section-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  p {
+    max-width: 30rem;
+  }
+}
+
+.waitlist-form {
+  margin: 50px;
 }
 
 @import './styles/navbar.scss';
