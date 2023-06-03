@@ -27,6 +27,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 0 15px 0 15px;
+  margin-bottom: 200px;
 }
 
 h2 {
@@ -63,9 +64,30 @@ h3 {
   align-items: center;
 
   .downloads {
-    margin-top: 50px;
+    margin-top: 30px;
     //display: flex;
     gap: 26px;
+
+    p {
+      padding-bottom: 10px;
+      color: rgba(255, 255, 255, 0.4);
+
+    }
+
+    a {
+      background-color: rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+      padding: 20px;
+
+      transition: all 200ms;
+
+      &:hover {
+        //background-color: lighten($color: #5865f2, $amount: 5);
+        background: rgba(255, 255, 255, 0.03);
+        cursor: pointer;
+      }
+      
+    }
   }
 }
 

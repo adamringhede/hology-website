@@ -3,7 +3,6 @@ import { getReleases, ReleasePlatform } from './releases'
 
 async function updateDownloadLinks() {
   const releases = await getReleases()
-  console.log(releases)
 
   function updateReleaseLink(platform: ReleasePlatform) {
     const link = document.querySelector<HTMLAnchorElement>(
