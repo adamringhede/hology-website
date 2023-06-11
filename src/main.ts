@@ -23,4 +23,6 @@ async function updateDownloadLinks() {
   updateReleaseLink(ReleasePlatform.linux)
 }
 
-updateDownloadLinks()
+window.addEventListener('DOMContentLoaded', (event) => {
+  updateDownloadLinks()
+})
