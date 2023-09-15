@@ -78,7 +78,7 @@ h3 {
 
     img {
       display: inline-block;
-      width: 90%;
+      width: 100%;
       border-radius: 20px;
     }
     
@@ -91,8 +91,8 @@ h3 {
       flex-wrap: wrap; /* Allow columns to wrap to the next row */
     }
     .column {
-      width: calc(50% - 10px); /* 50% width with a 20px gap (10px margin on each side) */
-      margin-right: 20px; /* Add a 20px gap between columns */
+      width: calc(50% - 30px); /* 50% width with a 20px gap (10px margin on each side) */
+      margin-right: 60px; /* Add a 20px gap between columns */
       margin-bottom: 20px; /* Add a 20px gap between rows */
     }
     .column:last-child {
