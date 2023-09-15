@@ -56,14 +56,6 @@ h3 {
   text-fill-color: transparent;
 }
 
-.thick {
-  color: #FFF;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.57px;
-}
 
 .section-columns {  
   max-width: 1000px;
@@ -161,7 +153,19 @@ section {
 
   p {
     max-width: 30rem;
+
+    &.thick {
+      color: #FFF;
+      font-size: 1.8rem;
+      max-width: 39.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.57px;
+    }
   }
+
+  
 }
 
 .waitlist-form {
@@ -206,3 +210,5 @@ a:visited {
 }
 
 @import './styles/navbar.scss';
+
+
