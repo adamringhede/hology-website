@@ -53,6 +53,14 @@
     }
   }
 
+  .twitter-link {
+    &:hover {
+      cursor: pointer;
+      filter: brightness(150%);
+      transition: filter 150ms;
+    }
+  }
+
   a:link {
     text-decoration: inherit;
     color: inherit;
