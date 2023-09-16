@@ -144,6 +144,27 @@ section {
   border-radius: 15px;
 }
 
+.footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  color: hsla(0,0%,100%,.8);
+
+  .link {
+    color: rgba(255, 255, 255, 0.32)
+  }
+
+  p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
 .section-centered {
   display: flex;
   flex-direction: column;
