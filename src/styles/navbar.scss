@@ -15,8 +15,12 @@
 
   @media (max-width: 900px) {
     width: 90%;
+    justify-content: space-between;
     .links {
       display: none !important;
+    }
+    .twitter-link {
+      //display: none !important;
     }
     background: rgba(217, 217, 217, 0);
     // Center
