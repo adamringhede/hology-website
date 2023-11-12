@@ -8,6 +8,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Hology Engine - A new game engine for web based games</title>
+        <meta
+          name="description"
+          content="A new game engine for creating 3D games for the web, mobile and desktop using TypeScript, Three.js and and other web technologies."
+        />
+        <meta
+          name="keywords"
+          content="Game engine, HTML, JavaScript, THREE.js, 3D"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

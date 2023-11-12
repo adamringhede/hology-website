@@ -17,7 +17,7 @@ export default function Page() {
           </a>
         </div>
         <a className="twitter-link" href="https://twitter.com/HologyEngine">
-          <img src="x.svg" alt="" />
+          <img src="x.svg" alt="Twitter link" />
         </a>
       </div>
 
@@ -46,7 +46,10 @@ export default function Page() {
             </p>
           </div>
           <div className="column">
-            <img src="landscape.png" />
+            <img
+              src="landscape.avif"
+              alt="Landscape sculpting in Hology Engine"
+            />
           </div>
         </div>
       </section>
@@ -62,7 +65,10 @@ export default function Page() {
             </p>
           </div>
           <div className="column">
-            <img src="falling-boxes.png" />
+            <img
+              src="falling-boxes.avif"
+              alt="Physics engine showing boxes falling"
+            />
           </div>
         </div>
       </section>
@@ -84,13 +90,13 @@ export default function Page() {
               target="_blank"
             >
               <span className="link-icon">
-                <img src="external.svg" alt="" />
+                <img src="external.svg" alt="External link icon" />
               </span>
               Try it out in this demo
             </a>
           </div>
           <div className="column">
-            <img src="character.png" />
+            <img src="character.avif" alt="3D character showcasing animation" />
           </div>
         </div>
       </section>
@@ -108,7 +114,10 @@ export default function Page() {
             </p>
           </div>
           <div className="column">
-            <img src="editor-water.png" />
+            <img
+              src="editor-water.avif"
+              alt="Custom shader to produce a water material"
+            />
           </div>
         </div>
       </section>
@@ -124,7 +133,10 @@ export default function Page() {
             </p>
           </div>
           <div className="column">
-            <img src="grass.png" />
+            <img
+              src="grass.avif"
+              alt="Procedural generation of instanced grass and foliage"
+            />
           </div>
         </div>
       </section>
