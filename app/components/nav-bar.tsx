@@ -3,7 +3,9 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <div className="nav-bar">
-      <img className="logo" src="Logo.svg" alt="logo" width="300px" />
+      <Link href="/">
+        <img className="logo" src="Logo.svg" alt="logo" />
+      </Link>
       <div className="links">
         <Link href="/#features" className="link">
           Features
