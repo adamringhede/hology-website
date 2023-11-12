@@ -1,7 +1,6 @@
 import './styles.scss'
 import Navbar from './components/nav-bar'
 import Footer from './components/footer'
-import GoogleAnalytics from './components/ga'
 
 export default function RootLayout({
   children,
