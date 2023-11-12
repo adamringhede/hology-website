@@ -44,7 +44,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <GoogleAnalytics></GoogleAnalytics>
         <div className="app">
           <Navbar></Navbar>
           {children}
