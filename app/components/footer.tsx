@@ -1,8 +1,20 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer className="footer">
-      <p style={{ color: 'hsla(0, 0%, 100%, 0.8' }}>Contact</p>
-      <p className="link">hello@hology.app</p>
+      <div className="column">
+        <h4>Contact</h4>
+        <p className="link">hello@hology.app</p>
+      </div>
+      <div className="column">
+        <h4>About</h4>
+        <p>
+          <Link className="link footer-link" href="/press-kit">
+            Press kit
+          </Link>
+        </p>
+      </div>
     </footer>
   )
 }

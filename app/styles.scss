@@ -143,18 +143,41 @@ section {
 }
 
 .footer {
+  display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  flex-direction: row;
+  gap: 100px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
 
   color: hsla(0, 0%, 100%, 0.8);
 
   .link {
     color: rgba(255, 255, 255, 0.32);
+  }
+
+  h4 {
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+
+  .footer-link {
+    &:hover {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    transition: color 150ms;
   }
 
   p {
