@@ -1,4 +1,6 @@
 import './styles.scss'
+import Navbar from './components/nav-bar'
+import Footer from './components/footer'
 
 export default function RootLayout({
   children,
@@ -41,7 +43,13 @@ export default function RootLayout({
           href="/favicon/favicon-16x16.png"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <div className="app">
+          <Navbar></Navbar>
+          {children}
+          <Footer></Footer>
+        </div>
+      </body>
     </html>
   )
 }

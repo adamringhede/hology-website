@@ -2,25 +2,7 @@ import ConvertKitForm from './convertkit-form'
 
 export default function Page() {
   return (
-    <div className="app">
-      <div className="nav-bar">
-        <img className="logo" src="Logo.svg" alt="logo" />
-        <div className="links">
-          <a href="#features" className="link">
-            Features
-          </a>
-          <a href="#beta" className="link">
-            Get started
-          </a>
-          <a href="https://docs.hology.app/" className="link" target="_blank">
-            Docs
-          </a>
-        </div>
-        <a className="twitter-link" href="https://twitter.com/HologyEngine">
-          <img src="x.svg" alt="Twitter link" />
-        </a>
-      </div>
-
+    <>
       <section className="section-centered">
         <h3>A new game engine</h3>
         <p className="thick">
@@ -151,11 +133,6 @@ export default function Page() {
           <ConvertKitForm></ConvertKitForm>
         </div>
       </section>
-
-      <footer className="footer">
-        <p style={{ color: 'hsla(0, 0%, 100%, 0.8' }}>Contact</p>
-        <p className="link">hello@hology.app</p>
-      </footer>
-    </div>
+    </>
   )
 }
