@@ -2,23 +2,27 @@
   "name": "hology-website",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
   },
   "devDependencies": {
+    "@types/react": "18.2.37",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslist": "^1.0.0-beta.1",
     "prettier": "^2.8.0",
     "sass": "^1.56.1",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3"
+    "typescript": "^4.6.4"
   },
   "dependencies": {
-    "airtable": "^0.11.5"
+    "@types/dompurify": "^3.0.5",
+    "airtable": "^0.11.5",
+    "dompurify": "^3.0.6",
+    "next": "^14.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
