@@ -1,5 +1,5 @@
 import './style.scss'
-import { getReleases, ReleasePlatform } from './releases'
+import { getReleases, ReleasePlatform } from '../app/download/releases'
 
 async function updateDownloadLinks() {
   const releases = await getReleases()
