@@ -149,7 +149,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   text-align: left;
   flex-direction: row;
   gap: 100px;
@@ -271,4 +270,9 @@ a:visited {
   @media (max-width: 900px) {
     display: none;
   }
+}
+
+
+.video {
+  margin-top: 60px;
 }

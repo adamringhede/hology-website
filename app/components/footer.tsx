@@ -8,11 +8,16 @@ export default function Footer() {
         <p className="link">hello@hology.app</p>
       </div>
       <div className="column">
-        <h4>About</h4>
+        <h4>Resources</h4>
         <p>
           <Link className="link footer-link" href="/press-kit">
             Press kit
           </Link>
+        </p>
+        <p>
+        <a href="https://docs.hology.app/" className="link footer-link" target="_blank">
+          Docs
+        </a>
         </p>
       </div>
     </footer>

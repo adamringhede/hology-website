@@ -20,7 +20,7 @@ export default function Page() {
           in the most fun way possible.
         </p>
         
-        {video}
+        <div className="video">{video}</div>
       
       </section>
 
