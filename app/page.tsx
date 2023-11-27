@@ -24,6 +24,17 @@ export default function Page() {
       
       </section>
 
+      <section className="section-centered" id="beta">
+        <h3>Getting started</h3>
+        <h2>Sign up for beta testing</h2>
+        <p>
+          Become an early adopter. Get in contact and get access to the beta.
+        </p>
+        <div className="waitlist-form">
+          <ConvertKitForm></ConvertKitForm>
+        </div>
+      </section>
+
 
       <section className="section-columns" id="features">
         <div className="container">
@@ -133,16 +144,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section-centered" id="beta">
-        <h3>Getting started</h3>
-        <h2>Sign up for beta testing</h2>
-        <p>
-          Become an early adopter. Get in contact and get access to the beta.
-        </p>
-        <div className="waitlist-form">
-          <ConvertKitForm></ConvertKitForm>
-        </div>
-      </section>
+
     </>
   )
 }
