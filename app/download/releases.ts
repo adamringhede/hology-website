@@ -63,7 +63,7 @@ function getPlatformFromFileName(fileName: string): ReleasePlatform | null {
   if (/\d+.AppImage$/.test(fileName)) {
     return ReleasePlatform.linux
   }
-  if (/\d+.msi$/.test(fileName)) {
+  if (/\d+.exe$/.test(fileName)) {
     return ReleasePlatform.windows
   }
   return null
