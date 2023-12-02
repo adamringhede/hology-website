@@ -15,9 +15,13 @@ export default function Footer() {
           </Link>
         </p>
         <p>
-        <a href="https://docs.hology.app/" className="link footer-link" target="_blank">
-          Docs
-        </a>
+          <a
+            href="https://docs.hology.app/"
+            className="link footer-link"
+            target="_blank"
+          >
+            Docs
+          </a>
         </p>
       </div>
     </footer>

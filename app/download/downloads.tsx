@@ -16,34 +16,60 @@ export default function Downloads() {
   return (
     <>
       {releases != null && (
-        <>
-          <a
-            id="download-macos"
-            href={getLink(releases, ReleasePlatform.macOS)}
-            className="square-button"
-          >
-            MacOS
-          </a>
-          <a
-            id="download-windows"
-            href={getLink(releases, ReleasePlatform.windows)}
-            className="square-button"
-          >
-            Windows
-          </a>
-          <a
-            id="download-linux"
-            href={getLink(releases, ReleasePlatform.linux)}
-            className="square-button"
-          >
-            Linux
-          </a>
-        </>
+        <div className="download-buttons">
+          <DownloadButton
+            releases={releases}
+            platform={ReleasePlatform.macOS}
+          ></DownloadButton>
+          <DownloadButton
+            releases={releases}
+            platform={ReleasePlatform.windows}
+          ></DownloadButton>
+          <DownloadButton
+            releases={releases}
+            platform={ReleasePlatform.linux}
+          ></DownloadButton>
+        </div>
       )}
     </>
   )
 }
 
+function DownloadButton({
+  releases,
+  platform,
+}: {
+  releases: Release[]
+  platform: ReleasePlatform
+}) {
+  // square-button-primary
+  let className = 'square-button'
+  if (platform === ReleasePlatform.macOS && isMac()) {
+    className += ' square-button-primary'
+  }
+  if (platform === ReleasePlatform.windows && isWindows()) {
+    className += ' square-button-primary'
+  }
+  return (
+    <a
+      id="download-linux"
+      href={getLink(releases, platform)}
+      className={className}
+    >
+      <img src="downloads.png" width="30px" height="30px" alt="" />
+      <p>{platform}</p>
+    </a>
+  )
+}
+
 function getLink(releases: Release[], platform: ReleasePlatform) {
   return releases?.reverse().find((r) => r.platform === platform)?.link
+}
+
+function isMac() {
+  return navigator.platform.indexOf('Mac') > -1
+}
+
+function isWindows() {
+  return navigator.platform.indexOf('Win') > -1
 }

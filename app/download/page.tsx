@@ -9,8 +9,17 @@ export default function Page() {
         <p>Install the editor to start building.</p>
 
         <div className="downloads">
-          <p>Select your OS</p>
           <Downloads></Downloads>
+          <p>
+            By downloading you accept the{' '}
+            <a
+              className="text-link"
+              href="https://generated-ox-d5d.notion.site/Hology-Engine-Terms-of-Service-bd174ef5f147424dbb9588e29c61ffbb?pvs=4"
+              target="_blank"
+            >
+              Terms of Service
+            </a>
+          </p>
         </div>
       </section>
     </>
