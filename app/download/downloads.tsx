@@ -13,6 +13,8 @@ export default function Downloads() {
     getReleases().then(setReleases)
   }, [])
 
+  console.log(releases)
+
   return (
     <>
       {releases != null && (
@@ -20,6 +22,10 @@ export default function Downloads() {
           <DownloadButton
             releases={releases}
             platform={ReleasePlatform.macOS}
+          ></DownloadButton>
+          <DownloadButton
+            releases={releases}
+            platform={ReleasePlatform.macOSIntel}
           ></DownloadButton>
           <DownloadButton
             releases={releases}

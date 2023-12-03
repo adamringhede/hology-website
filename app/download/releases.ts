@@ -1,4 +1,5 @@
 export enum ReleasePlatform {
+  macOSIntel = 'MacOS (Intel)',
   macOS = 'MacOS',
   windows = 'Windows',
   linux = 'Linux',
@@ -57,8 +58,11 @@ function nonNull<T>(arr: Array<T | null>): Array<T> {
 }
 
 function getPlatformFromFileName(fileName: string): ReleasePlatform | null {
-  if (/\d+.dmg$/.test(fileName)) {
+  if (/\d+-arm64\.dmg$/.test(fileName)) {
     return ReleasePlatform.macOS
+  }
+  if (/\d+.dmg$/.test(fileName)) {
+    return ReleasePlatform.macOSIntel
   }
   if (/\d+.AppImage$/.test(fileName)) {
     return ReleasePlatform.linux
