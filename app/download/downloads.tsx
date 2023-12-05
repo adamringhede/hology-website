@@ -13,8 +13,6 @@ export default function Downloads() {
     getReleases().then(setReleases)
   }, [])
 
-  console.log(releases)
-
   return (
     <>
       {releases != null && (
