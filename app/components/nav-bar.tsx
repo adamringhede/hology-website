@@ -17,7 +17,11 @@ export default function Navbar() {
           Docs
         </a>
       </div>
-      <a className="twitter-link" href="https://twitter.com/HologyEngine">
+      <a
+        className="twitter-link"
+        target="_blank"
+        href="https://twitter.com/HologyEngine"
+      >
         <img src="x.svg" alt="Twitter link" />
       </a>
     </div>
