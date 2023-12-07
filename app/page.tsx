@@ -5,23 +5,25 @@ export const metadata = {
 }
 
 export default function Page() {
-
-  const video = <iframe  src="https://www.youtube.com/embed/IpR-0Wm_Zd8?si=Q0dw9rmpVI7rvtv5" title="YouTube video player"  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+  const video = (
+    <iframe
+      src="https://www.youtube.com/embed/IpR-0Wm_Zd8?si=Q0dw9rmpVI7rvtv5"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+  )
   return (
     <>
       <section className="section-centered">
         <h3>A new game engine</h3>
         <p className="thick">
           Hology Engine makes it easier for developers to create 3D games and
-          experiences for the Web, Desktop and Mobile.
-          <br />
-          <br />
-          The engine is free to let everyone use it to express their creativity
-          in the most fun way possible.
+          experiences for the Web, Desktop and Mobile by using web technologies.
         </p>
-        
+
         <div className="video">{video}</div>
-      
       </section>
 
       <section className="section-centered" id="beta">
@@ -34,7 +36,6 @@ export default function Page() {
           <ConvertKitForm></ConvertKitForm>
         </div>
       </section>
-
 
       <section className="section-columns" id="features">
         <div className="container">
@@ -143,8 +144,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-
     </>
   )
 }
