@@ -51,7 +51,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
-              src="landscape.avif"
+              src="landscape.png"
               alt="Landscape sculpting in Hology Engine"
             />
           </div>
@@ -70,7 +70,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
-              src="falling-boxes.avif"
+              src="falling-boxes.png"
               alt="Physics engine showing boxes falling"
             />
           </div>
@@ -100,7 +100,7 @@ export default function Page() {
             </a>
           </div>
           <div className="column">
-            <img src="character.avif" alt="3D character showcasing animation" />
+            <img src="character.png" alt="3D character showcasing animation" />
           </div>
         </div>
       </section>
@@ -119,7 +119,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
-              src="editor-water.avif"
+              src="editor-water.png"
               alt="Custom shader to produce a water material"
             />
           </div>
@@ -138,7 +138,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
-              src="grass.avif"
+              src="grass.png"
               alt="Procedural generation of instanced grass and foliage"
             />
           </div>
