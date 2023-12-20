@@ -4,9 +4,14 @@ export default function Page() {
       <section className="section-centered section" id="download">
         <h3>Partner</h3>
         <h2>Let's work together</h2>
-        <p>
+        <p style={{ maxWidth: '700px' }}>
           We are looking for game studios that we can work with to develop the
-          engine while shaping it to suit your needs.
+          engine while shaping it to suit your needs. Contact us at{' '}
+          <strong>
+            <a style={{ cursor: 'pointer' }} href="mailto:hello@hology.app">
+              hello@hology.app
+            </a>
+          </strong>
         </p>
       </section>
 
