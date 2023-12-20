@@ -42,5 +42,5 @@ export default function Page() {
 }
 
 export const metadata = {
-  title: 'Hology Engine Download',
+  title: 'Hology Engine - Partner',
 }
