@@ -177,6 +177,21 @@ section {
   }
 }
 
+.footer-socials {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+  justify-content: center;
+
+  .icon-link {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+      transition: opacity 150ms;
+    }
+  }
+}
 .footer {
   display: flex;
   margin-top: 20px;

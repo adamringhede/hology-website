@@ -10,9 +10,6 @@ export default function Navbar() {
         <Link href="/#features" className="link">
           Features
         </Link>
-        <Link href="/#beta" className="link">
-          Beta
-        </Link>
         <Link href="/partner" className="link">
           Partner
         </Link>
@@ -20,13 +17,11 @@ export default function Navbar() {
           Docs
         </a>
       </div>
-      <a
-        className="twitter-link"
-        target="_blank"
-        href="https://twitter.com/HologyEngine"
-      >
-        <img src="x.svg" alt="Twitter link" />
-      </a>
+      <Link href="/#beta" className="link">
+        <div className="nav-bar-button">
+          <span>Join the Beta</span>
+        </div>
+      </Link>
     </div>
   )
 }
