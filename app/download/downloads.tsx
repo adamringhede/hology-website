@@ -67,7 +67,7 @@ function DownloadButton({
 }
 
 function getLink(releases: Release[], platform: ReleasePlatform) {
-  return releases?.reverse().find((r) => r.platform === platform)?.link
+  return releases.findLast((r) => r.platform === platform)?.link
 }
 
 function isMac() {
