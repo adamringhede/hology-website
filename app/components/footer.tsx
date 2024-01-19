@@ -1,6 +1,13 @@
 import Link from 'next/link'
 
 export default function Footer() {
+  const discordLink = (<a
+    className="icon-link"
+    target="_blank"
+    href="https://discord.gg/BCcdRvjS3P"
+  >
+    <img src="discord.svg" width={30} alt="Discord link" />
+  </a>)
   return (
     <footer>
       <div className="footer">
@@ -34,13 +41,6 @@ export default function Footer() {
           href="https://twitter.com/HologyEngine"
         >
           <img src="x.svg" alt="Twitter link" />
-        </a>
-        <a
-          className="icon-link"
-          target="_blank"
-          href="https://discord.gg/BCcdRvjS3P"
-        >
-          <img src="discord.svg" width={30} alt="Discord link" />
         </a>
         <a
           className="icon-link"
