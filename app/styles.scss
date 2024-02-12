@@ -353,7 +353,7 @@ a:visited {
 
 .column-right-align {
   @media (min-width: 800px) {
-    width: calc(50% - 120px) !important;
+    width: calc(50% - 150px) !important;
     display: flex;
     flex-flow: row-reverse;
   }
