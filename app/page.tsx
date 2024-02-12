@@ -51,6 +51,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
+              className='big-img'
               src="landscape.png"
               alt="Landscape sculpting in Hology Engine"
             />
@@ -70,6 +71,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
+            className='big-img'
               src="falling-boxes.png"
               alt="Physics engine showing boxes falling"
             />
@@ -100,7 +102,7 @@ export default function Page() {
             </a>
           </div>
           <div className="column">
-            <img src="character.png" alt="3D character showcasing animation" />
+            <img className='big-img' src="character.png" alt="3D character showcasing animation" />
           </div>
         </div>
       </section>
@@ -119,6 +121,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
+            className='big-img'
               src="editor-water.png"
               alt="Custom shader to produce a water material"
             />
@@ -138,6 +141,7 @@ export default function Page() {
           </div>
           <div className="column">
             <img
+            className='big-img'
               src="grass.png"
               alt="Procedural generation of instanced grass and foliage"
             />

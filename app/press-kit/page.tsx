@@ -17,7 +17,7 @@ export default function Page() {
             </a>
           </div>
           <div className="column">
-            <img src="logos.avif" alt="Physics engine showing boxes falling" />
+            <img className='big-img' src="logos.avif" alt="Physics engine showing boxes falling" />
           </div>
         </div>
       </section>

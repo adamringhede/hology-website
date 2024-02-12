@@ -76,7 +76,7 @@ h3 {
     width: 100%; /* Take full width by default */
     margin-bottom: 20px; /* Add a 20px gap between columns */
 
-    img {
+    img.big-img {
       display: inline-block;
       width: 100%;
       border-radius: 20px;
@@ -141,6 +141,18 @@ section {
 
   @media (max-width: 700px) {
     flex-direction: column;
+  }
+}
+
+.social-link {
+  img {
+    width: 30px !important;
+    opacity: 0.2;
+    transition: all 200ms;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 }
 
@@ -336,4 +348,14 @@ a:visited {
       height: 205px;
     }
   }
+}
+
+
+.column-right-align {
+  @media (min-width: 800px) {
+    width: calc(50% - 120px) !important;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
 }

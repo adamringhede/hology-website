@@ -32,6 +32,14 @@ export default function Footer() {
             </a>
           </p>
         </div>
+        <div className="column">
+          <h4>Company</h4>
+          <p>
+            <Link className="link footer-link" href="/about-us">
+              About us
+            </Link>
+          </p>
+        </div>
       </div>
 
       <div className="footer-socials">
