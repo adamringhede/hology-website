@@ -28,7 +28,7 @@ export default function Page() {
             Adam is a seasoned developer with a passion for 3D applications and gaming. With startup experience as both a software engineer and product manager, he brings over 13 years of web development expertise to the table. 
             </p>
             <div>
-              <a className="social-link" href="https://www.linkedin.com/in/adam-ringhede/"><img src="li.png"></img></a>
+              <a className="social-link" href="https://www.linkedin.com/in/adam-ringhede/" target="_blank"><img src="li.png"></img></a>
             </div>
           </div>
         </div>
