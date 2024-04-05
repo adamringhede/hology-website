@@ -53,6 +53,13 @@ export default function Footer() {
         <a
           className="icon-link"
           target="_blank"
+          href="https://discord.gg/BCcdRvjS3P"
+        >
+          <img src="discord.svg" width={30} alt="Discord link" />
+        </a>
+        <a
+          className="icon-link"
+          target="_blank"
           href="https://www.youtube.com/channel/UCfB35u899Gs5bNxhwkc8CDQ"
         >
           <img src="youtube.svg" width={30} alt="Youtube link" />
