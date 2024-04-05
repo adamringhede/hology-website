@@ -22,7 +22,7 @@ export default function Page() {
           </div>
           <div className="column">
             <h3>Adam Ringhede</h3>
-            <h4>Co-founder</h4>
+            <h4>Product, Tech</h4>
             <p>
             Adam is a seasoned developer with a passion for 3D applications and gaming. With startup experience as both a software engineer and product manager, he brings over 13 years of web development expertise to the table. 
             </p>
@@ -37,9 +37,9 @@ export default function Page() {
           </div>
           <div className="column">
             <h3>Annie Tsai</h3>
-            <h4>Co-founder</h4>
+            <h4>Operations, PR, Marketing, UX</h4>
             <p>
-            Annie is responsible for operations, marketing, and UX research. With experience in public relations, community building, UX research & design, and front-end web development.  Passionate about esports and gaming.
+            Annie is responsible for operations, marketing, and UX research. With experience in public relations, community building, UX research & design, and front-end web development. Passionate about esports and gaming.
             </p>
             <div>
               <a className="social-link" href="https://www.linkedin.com/in/annietsai8/" target="_blank"><img src="li.png"></img></a>
