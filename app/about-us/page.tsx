@@ -17,18 +17,32 @@ export default function Page() {
 
       <section className="section-columns">
         <div className="container">
-
           <div className="column column-right-align">
             <img src="adam.jpeg" style={{marginTop: '30px', 'width': '170px', borderRadius: '100%'}} width="170" height="170"></img>
           </div>
           <div className="column">
             <h3>Adam Ringhede</h3>
-            <h4>Founder</h4>
+            <h4>Co-founder</h4>
             <p>
             Adam is a seasoned developer with a passion for 3D applications and gaming. With startup experience as both a software engineer and product manager, he brings over 13 years of web development expertise to the table. 
             </p>
             <div>
               <a className="social-link" href="https://www.linkedin.com/in/adam-ringhede/" target="_blank"><img src="li.png"></img></a>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="column column-right-align">
+            <img src="annie.jpg" style={{marginTop: '30px', 'width': '170px', borderRadius: '100%'}} width="170" height="170"></img>
+          </div>
+          <div className="column">
+            <h3>Annie Tsai</h3>
+            <h4>Co-founder</h4>
+            <p>
+            Annie is responsible for operations, marketing, and UX research. With experience in public relations, community building, UX research & design, and front-end web development.  Passionate about esports and gaming.
+            </p>
+            <div>
+              <a className="social-link" href="https://www.linkedin.com/in/annietsai8/" target="_blank"><img src="li.png"></img></a>
             </div>
           </div>
         </div>
