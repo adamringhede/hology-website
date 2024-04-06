@@ -64,6 +64,13 @@ export default function Footer() {
         >
           <img src="youtube.svg" width={30} alt="Youtube link" />
         </a>
+        <a
+          className="icon-link"
+          target="_blank"
+          href="https://se.linkedin.com/company/hology-engine"
+        >
+          <img src="li.png" width={28} alt="Youtube link" />
+        </a>
       </div>
     </footer>
   )
