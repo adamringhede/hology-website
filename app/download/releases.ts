@@ -12,11 +12,13 @@ export type Release = {
   platform: ReleasePlatform
 }
 
-const releasesBaseUrl = 'https://hology-releases.s3.eu-north-1.amazonaws.com/'
+//const releasesBaseUrl = 'http://localhost:3000/api/downloads'
+const releasesBaseUrl = 'https://id.hology.app/api/downloads'
+const releasesListUrl = 'https://id.hology.app/api/dl'
 
 export async function getReleases(): Promise<Release[]> {
   // Get XML
-  const text = await (await fetch(releasesBaseUrl, {})).text()
+  const text = await (await fetch(releasesListUrl, {})).text()
   const parser = new DOMParser()
   const xmlDoc = parser.parseFromString(text, 'text/xml')
 
@@ -43,7 +45,7 @@ export async function getReleases(): Promise<Release[]> {
       ?.reduce((n, a, i) => n + a * Math.pow(10000, i))
 
     return <Release>{
-      link: releasesBaseUrl + fileName,
+      link: releasesBaseUrl + '/' + fileName,
       platform,
       version,
       versionNumber,
