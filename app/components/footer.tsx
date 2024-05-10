@@ -18,11 +18,6 @@ export default function Footer() {
         <div className="column">
           <h4>Resources</h4>
           <p>
-            <Link className="link footer-link" href="/press-kit">
-              Press kit
-            </Link>
-          </p>
-          <p>
             <a
               href="https://docs.hology.app/"
               className="link footer-link"
@@ -31,12 +26,27 @@ export default function Footer() {
               Docs
             </a>
           </p>
+          <p>
+            <Link className="link footer-link" href="/download">
+              Download
+            </Link>
+          </p>
+          <p>
+            <Link className="link footer-link" href="/press-kit">
+              Press kit
+            </Link>
+          </p>
         </div>
         <div className="column">
           <h4>Company</h4>
           <p>
             <Link className="link footer-link" href="/about-us">
               About us
+            </Link>
+          </p>
+          <p>
+            <Link className="link footer-link" href="/partner">
+              Partner
             </Link>
           </p>
         </div>

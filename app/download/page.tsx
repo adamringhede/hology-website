@@ -21,6 +21,18 @@ export default function Page() {
             </a>
           </p>
         </div>
+        <p>
+        <a
+              className="external-link"
+              href="https://discord.gg/BCcdRvjS3P"
+              target="_blank"
+            >
+              <span className="link-icon">
+                <img src="external.svg" alt="External link icon" />
+              </span>
+              Join our Discord server to connect with us, other developers and get support
+            </a>
+        </p>
       </section>
     </>
   )

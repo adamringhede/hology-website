@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ConvertKitForm from './components/convertkit-form'
 
 export const metadata = {
@@ -28,13 +29,19 @@ export default function Page() {
 
       <section className="section-centered" id="beta">
         <h3>Getting started</h3>
-        <h2>Sign up for beta testing</h2>
-        <p>
-          Become an early adopter. Get in contact and get access to the beta.
+        <h2>Join the open beta</h2>
+        <p style={{maxWidth: '600px'}}>
+          We are now in the final stages before launch and making it possible for anybody to start developing with Hology Engine.
+          Download the editor to get started.
         </p>
-        <div className="waitlist-form">
-          <ConvertKitForm></ConvertKitForm>
-        </div>
+        <p>
+          <Link href="/download" className="link">
+            <div className="nav-bar-button">
+              <span>Download</span>
+            </div>
+          </Link>
+        </p>
+
       </section>
 
       <section className="section-columns" id="features">

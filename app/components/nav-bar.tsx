@@ -10,9 +10,6 @@ export default function Navbar() {
         <Link href="/#features" className="link">
           Features
         </Link>
-        <Link href="/partner" className="link">
-          Partner
-        </Link>
         <a href="https://docs.hology.app/" className="link" target="_blank">
           Docs
         </a>
