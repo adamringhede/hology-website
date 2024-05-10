@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import ConvertKitForm from './components/convertkit-form'
 
 export const metadata = {
   title: 'Hology Engine - A new game engine for web based games',
