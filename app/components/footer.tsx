@@ -82,6 +82,11 @@ export default function Footer() {
           <img src="li.png" width={28} alt="Youtube link" />
         </a>
       </div>
+      <p style={{ textAlign: 'center' }}>
+        <small>
+          Copyright © 2024 Hology Interative AB. All rights reserved.
+        </small>
+      </p>
     </footer>
   )
 }
