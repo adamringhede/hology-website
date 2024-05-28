@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
       <p style={{ textAlign: 'center' }}>
         <small>
-          Copyright © 2024 Hology Interative AB. All rights reserved.
+          Copyright © 2024 Hology Interactive AB. All rights reserved.
         </small>
       </p>
     </footer>
