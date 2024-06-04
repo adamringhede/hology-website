@@ -1,10 +1,13 @@
 import Link from 'next/link'
+import { getPost, getPosts } from './blog/backend'
 
 export const metadata = {
   title: 'Hology Engine - A new game engine for web based games',
 }
 
-export default function Page() {
+export default async function Page() {
+
+
   const video = (
     <iframe
       src="https://www.youtube.com/embed/IpR-0Wm_Zd8?si=Q0dw9rmpVI7rvtv5"

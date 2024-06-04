@@ -32,6 +32,11 @@ export default function Footer() {
             </Link>
           </p>
           <p>
+            <Link className="link footer-link" href="/blog">
+              Blog
+            </Link>
+          </p>
+          <p>
             <Link className="link footer-link" href="/press-kit">
               Press kit
             </Link>
@@ -58,28 +63,28 @@ export default function Footer() {
           target="_blank"
           href="https://twitter.com/HologyEngine"
         >
-          <img src="x.svg" alt="Twitter link" />
+          <img src="/x.svg" alt="Twitter link" />
         </a>
         <a
           className="icon-link"
           target="_blank"
           href="https://discord.gg/BCcdRvjS3P"
         >
-          <img src="discord.svg" width={30} alt="Discord link" />
+          <img src="/discord.svg" width={30} alt="Discord link" />
         </a>
         <a
           className="icon-link"
           target="_blank"
           href="https://www.youtube.com/channel/UCfB35u899Gs5bNxhwkc8CDQ"
         >
-          <img src="youtube.svg" width={30} alt="Youtube link" />
+          <img src="/youtube.svg" width={30} alt="Youtube link" />
         </a>
         <a
           className="icon-link"
           target="_blank"
           href="https://se.linkedin.com/company/hology-engine"
         >
-          <img src="li.png" width={28} alt="Youtube link" />
+          <img src="/li.png" width={28} alt="Youtube link" />
         </a>
       </div>
       <p style={{ textAlign: 'center' }}>
