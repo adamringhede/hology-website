@@ -23,6 +23,7 @@ const GET_POSTS = gql`
         }
         name
       }
+      excerpt
     }
   }
 `
@@ -44,6 +45,7 @@ const GET_POST = gql`
         }
         name
       }
+      excerpt
     }
   }
 `
@@ -65,6 +67,7 @@ export async function getPosts(): List<{
     }
     name: string
   }
+  excerpt: string
 }> {
   const { data } = await client.query({
     query: GET_POSTS
@@ -87,6 +90,7 @@ export async function getPost(slug: string): Promise<{
     }
     name: string
   }
+  excerpt: string
 }> {
   const { data } = await client.query({
     query: GET_POST, variables: {slug}

@@ -40,4 +40,5 @@ function formatDate(date: string) {
 
 export const metadata = {
   title: 'Hology Engine Blog',
+  description: 'Stay updated on what happens at Hology Interactive, new feature updates, guides and industry insights.'
 }
