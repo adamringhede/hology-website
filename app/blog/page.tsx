@@ -21,9 +21,9 @@ export default async function Page() {
 
       <section className="post-links " id="download">
         {posts.map(post => {
-          return <Link href={`/blog/${post.slug}`}>
+          return <Link key={post.slug} href={`/blog/${post.slug}`}>
             <div className="post-link">
-              <img src={post.coverImage.url} width={200} alt="" />
+              <img src={post.coverImage?.url} width={200} alt="" />
               <small>{formatDate(post.createdAt)}</small>
               <h4>{post.title}</h4>
             </div>

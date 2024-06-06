@@ -3,6 +3,11 @@ article {
   max-width: 44rem;
   margin-top: 4rem;
 
+  img {
+    max-width:100% !important;
+    height:auto !important;
+  }
+
   img.cover {
     width: 100%;
   }
@@ -60,8 +65,6 @@ article {
   h4 {
     margin-top: 0
   }
-
-  
 
   small {
     opacity: .7;

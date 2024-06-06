@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { getPost, getPosts } from './blog/backend'
 
 export const metadata = {
   title: 'Hology Engine - A new game engine for web based games',

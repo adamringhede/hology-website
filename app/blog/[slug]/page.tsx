@@ -1,9 +1,11 @@
-import Link from "next/link"
 import { getPost, getPosts } from "../backend"
 
 export default async function Page({ params }: { params: { slug: string } }) {
 
   const post = await getPost(params.slug)
+/*  post.content.html = post.content.html
+    .replaceAll(/width="\d+"/g, '')
+    .replaceAll(/height="\d+"/g, '')*/
 
   const created = new Date(post.createdAt).toDateString()
 

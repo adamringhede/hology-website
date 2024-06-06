@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 // Initialize Apollo Client
 const client = new ApolloClient({
   uri: 'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clwy4b5lp07ug07w8zu1eehxz/master',
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({resultCaching: false}),
 });
 
 // GraphQL query
@@ -72,7 +72,7 @@ export async function getPosts(): List<{
   const { data } = await client.query({
     query: GET_POSTS
   });
-  return data.posts;
+  return data.posts
 }
 
 export async function getPost(slug: string): Promise<{
