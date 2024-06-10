@@ -13,6 +13,9 @@ export default function Navbar() {
         <a href="https://docs.hology.app/" className="link" target="_blank">
           Docs
         </a>
+        <Link className="link" href="/blog">
+          Blog
+        </Link>
       </div>
       <Link href="/#beta" className="link">
         <div className="nav-bar-button">
