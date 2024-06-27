@@ -1,9 +1,9 @@
-import { getPost, getPosts } from "../backend"
+import { getPost, getPosts } from '../backend'
+import * as he from 'he'
 
 export default async function Page({ params }: { params: { slug: string } }) {
-
   const post = await getPost(params.slug)
-/*  post.content.html = post.content.html
+  /*  post.content.html = post.content.html
     .replaceAll(/width="\d+"/g, '')
     .replaceAll(/height="\d+"/g, '')*/
 
@@ -16,26 +16,29 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <h1>{post.title}</h1>
 
         <img src={post.coverImage.url} className="cover" alt="" />
-        <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
-        
+        <div
+          dangerouslySetInnerHTML={{ __html: he.unescape(post.content.html) }}
+        ></div>
       </article>
     </>
   )
 }
 // <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
-
 // or Dynamic metadata
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}) {
   const post = await getPost(params.slug)
   return {
     title: post.title,
-    description: post.excerpt
+    description: post.excerpt,
   }
 }
 
-
 export async function generateStaticParams() {
   const posts = await getPosts()
-  return posts.map(({slug}) => ({slug}))
+  return posts.map(({ slug }) => ({ slug }))
 }
