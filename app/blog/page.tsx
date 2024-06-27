@@ -2,9 +2,12 @@ import Link from 'next/link'
 import { getPosts } from './backend'
 
 export default async function Page() {
-  const posts = (await getPosts()).toSorted(
-    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-  )
+  const posts = (await getPosts())
+    .slice()
+    .sort(
+      (a, b) =>
+        new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    )
 
   //   const post = await getPost('creating-learning-platform-nextjs-13-app-router')
 
